@@ -1,0 +1,27 @@
+/* src/components/Button.module.css */
+.button {
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: royalblue;
+  color: white;
+}
+
+.primary:hover {
+  background-color: lightgray;
+}
+
+.secondary {
+  background-color: lightgray;
+  color: black;
+}
+
+.secondary:hover {
+  background-color: royalblue;
+  transition: cubic-bezier();
+}
