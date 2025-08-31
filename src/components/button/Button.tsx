@@ -1,17 +1,14 @@
 // src/components/Button.tsx
 
-import clsx from "clsx";
-import css from "./Button.module.css";
-
-interface ButtonProps {
-  variant?: "primary" | "secondary";
-  text: string;
+interface CounterProps {
+  clicks: number;
+  onUpdate: () => void;
 }
 
-export default function Button({ variant, text }: ButtonProps) {
+export default function Button({ clicks, onUpdate }: CounterProps) {
   return (
-    <button className={clsx(css.button, variant && css[variant])}>
-      {text}
+    <button className="button" onClick={onUpdate}>
+      {clicks}
     </button>
   );
 }

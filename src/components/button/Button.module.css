@@ -5,23 +5,6 @@
   border: none;
   font: inherit;
   cursor: pointer;
-}
-
-.primary {
-  background-color: royalblue;
-  color: white;
-}
-
-.primary:hover {
-  background-color: lightgray;
-}
-
-.secondary {
-  background-color: lightgray;
-  color: black;
-}
-
-.secondary:hover {
-  background-color: royalblue;
-  transition: cubic-bezier();
+  align-items: center;
+  width: 32px;
 }
